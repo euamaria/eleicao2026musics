@@ -1,0 +1,9 @@
+title: Eleições 2026 Músicas
+description: Músicas, letras e fontes
+url: ""
+baseurl: ""
+
+collections:
+  musicas:
+    output: true
+    permalink: /musicas/:name/
