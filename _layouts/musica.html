@@ -1,0 +1,73 @@
+---
+layout: default
+---
+<article class="musica-content container">
+    <header class="musica-header">
+        <h1>{{ page.title }}</h1>
+        {% if page.tags %}
+            <div class="tags">
+                {% for tag in page.tags %}
+                    <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </header>
+
+    <div class="musica-layout">
+        <div class="musica-main">
+            {% if page.thumbnail %}
+                <div class="thumbnail">
+                    <img src="{{ page.thumbnail | relative_url }}" alt="Thumbnail para {{ page.title }}">
+                </div>
+            {% endif %}
+
+            {% if page.audio_url %}
+                <div class="audio-player">
+                    <audio controls>
+                        <source src="{{ page.audio_url | relative_url }}" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+            {% endif %}
+
+            <div class="letra">
+                <h2>Letra</h2>
+                <div class="letra-content">
+                    {{ content }}
+                </div>
+            </div>
+
+            {% if page.images and page.images.size > 0 %}
+                <div class="related-images">
+                    <h2>Imagens Relacionadas</h2>
+                    <div class="image-gallery">
+                        {% for img in page.images %}
+                            <img src="{{ img | relative_url }}" alt="Imagem relacionada">
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+
+        <aside class="musica-sidebar">
+            {% if page.facts and page.facts.size > 0 %}
+                <div class="fact-checking">
+                    <h2>Checagem de Fatos</h2>
+                    <ul class="fact-list">
+                        {% for fact in page.facts %}
+                            <li class="fact-item">
+                                <div class="fact-stanza"><strong>Estrofe/Trecho:</strong> {{ fact.stanza }}</div>
+                                <div class="fact-info"><strong>Fato:</strong> {{ fact.fact }}</div>
+                                {% if fact.source_url %}
+                                    <div class="fact-source">
+                                        <strong>Fonte:</strong> <a href="{{ fact.source_url }}" target="_blank" rel="noopener noreferrer">{{ fact.source_name | default: "Link" }}</a>
+                                    </div>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+        </aside>
+    </div>
+</article>

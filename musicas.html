@@ -1,0 +1,77 @@
+---
+layout: default
+title: Todas as Músicas
+---
+
+<div class="container archive-container">
+    <h1>{{ page.title }}</h1>
+
+    <div class="filters">
+        <input type="text" id="searchInput" placeholder="Buscar por palavra...">
+
+        <select id="categoryFilter">
+            <option value="">Todas as Categorias</option>
+            {% assign categories = "" | split: "," %}
+            {% for musica in site.musicas %}
+                {% if musica.category %}
+                    {% assign categories = categories | push: musica.category %}
+                {% endif %}
+            {% endfor %}
+            {% assign unique_categories = categories | uniq | sort %}
+            {% for category in unique_categories %}
+                <option value="{{ category | downcase }}">{{ category }}</option>
+            {% endfor %}
+        </select>
+
+        <select id="tagFilter">
+            <option value="">Todas as Tags</option>
+            {% assign tags = "" | split: "," %}
+            {% for musica in site.musicas %}
+                {% if musica.tags %}
+                    {% for tag in musica.tags %}
+                        {% assign tags = tags | push: tag %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+            {% assign unique_tags = tags | uniq | sort %}
+            {% for tag in unique_tags %}
+                <option value="{{ tag | downcase }}">{{ tag }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="musicas-grid" id="musicasGrid">
+        {% for musica in site.musicas %}
+            <div class="musica-card"
+                 data-title="{{ musica.title | downcase }}"
+                 data-category="{{ musica.category | downcase }}"
+                 data-tags="{{ musica.tags | join: ',' | downcase }}"
+                 data-content="{{ musica.content | strip_html | downcase }}">
+
+                {% if musica.thumbnail %}
+                    <img src="{{ musica.thumbnail | relative_url }}" alt="Thumbnail para {{ musica.title }}" class="card-thumbnail">
+                {% else %}
+                    <div class="card-thumbnail-placeholder">Sem imagem</div>
+                {% endif %}
+
+                <div class="card-content">
+                    <h2><a href="{{ musica.url | relative_url }}">{{ musica.title }}</a></h2>
+                    {% if musica.category %}
+                        <p class="card-category">{{ musica.category }}</p>
+                    {% endif %}
+                    {% if musica.tags %}
+                        <div class="card-tags">
+                            {% for tag in musica.tags %}
+                                <span class="tag">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div id="noResultsMessage" class="hidden">
+        Nenhuma música encontrada com os filtros atuais.
+    </div>
+</div>

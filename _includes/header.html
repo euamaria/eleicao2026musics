@@ -1,0 +1,12 @@
+<header class="site-header">
+    <div class="container header-container">
+        <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+        <nav class="site-nav">
+            <ul>
+                {% for item in site.data.menu %}
+                    <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</header>

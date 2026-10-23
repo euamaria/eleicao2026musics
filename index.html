@@ -1,0 +1,26 @@
+---
+layout: default
+title: Início
+---
+
+<div class="container hero">
+    <h1>Bem-vindo ao Eleições 2026 Músicas</h1>
+    <p>Explore nossa coleção de músicas com letras, áudio, imagens e checagem de fatos.</p>
+    <a href="{{ '/musicas.html' | relative_url }}" class="btn">Ver Músicas</a>
+</div>
+
+<div class="container recent-musicas">
+    <h2>Adicionadas Recentemente</h2>
+    <div class="musicas-grid">
+        {% for musica in site.musicas limit:3 %}
+            <div class="musica-card">
+                {% if musica.thumbnail %}
+                    <img src="{{ musica.thumbnail | relative_url }}" alt="Thumbnail para {{ musica.title }}" class="card-thumbnail">
+                {% endif %}
+                <div class="card-content">
+                    <h3><a href="{{ musica.url | relative_url }}">{{ musica.title }}</a></h3>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
