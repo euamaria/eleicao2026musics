@@ -1,0 +1,23 @@
+---
+layout: default
+title: Playlists
+---
+
+<div class="container archive-container">
+    <h1>{{ page.title }}</h1>
+    <p>Confira nossas seleções de músicas curadas especialmente para você.</p>
+
+    <div class="musicas-grid">
+        {% for playlist in site.playlists %}
+            <div class="musica-card">
+                <div class="card-content">
+                    <h2><a href="{{ playlist.url | relative_url }}">{{ playlist.title }}</a></h2>
+                    {% if playlist.description %}
+                        <p>{{ playlist.description }}</p>
+                    {% endif %}
+                    <p><strong>Músicas:</strong> {{ playlist.tracks.size }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

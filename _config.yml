@@ -7,3 +7,6 @@ collections:
   musicas:
     output: true
     permalink: /musicas/:name/
+  playlists:
+    output: true
+    permalink: /playlists/:name/
