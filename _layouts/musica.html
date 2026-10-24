@@ -11,6 +11,15 @@ layout: default
                 {% endfor %}
             </div>
         {% endif %}
+
+        <div class="musica-meta">
+            {% if page.duration %}
+                <p><strong>Duração:</strong> {{ page.duration }}</p>
+            {% endif %}
+            {% if page.compositor %}
+                <p><strong>Compositor:</strong> {{ page.compositor }}</p>
+            {% endif %}
+        </div>
     </header>
 
     <div class="musica-layout">

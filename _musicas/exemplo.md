@@ -8,6 +8,8 @@ tags:
   - "2026"
 audio_url: /assets/audio/exemplo.mp3
 thumbnail: /assets/images/thumb-exemplo.jpg
+duration: "03:45"
+compositor: "João e Maria"
 images:
   - /assets/images/exemplo-1.jpg
   - /assets/images/exemplo-2.jpg
