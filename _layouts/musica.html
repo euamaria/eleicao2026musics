@@ -19,6 +19,12 @@ layout: default
             {% if page.compositor %}
                 <p><strong>Compositor:</strong> {{ page.compositor }}</p>
             {% endif %}
+            {% if page.estilo and page.estilo != "" %}
+                <p><strong>Estilo:</strong> {{ page.estilo }}</p>
+            {% endif %}
+            {% if page.link and page.link != "" %}
+                <p><strong>Link:</strong> <a href="{{ page.link }}" target="_blank" rel="noopener noreferrer">Acessar</a></p>
+            {% endif %}
         </div>
     </header>
 

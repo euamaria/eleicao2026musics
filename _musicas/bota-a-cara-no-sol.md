@@ -1,0 +1,74 @@
+---
+title: "Bota a Cara no Sol"
+audio_url: /assets/audio/bota-a-cara-no-sol.mp3
+thumbnail: /assets/images/bota-a-cara-no-sol.jpeg
+link: "https://suno.com/song/577a726e-8e5a-4860-903e-9b463fb7b9f3"
+estilo: "Electro-pop dance-pop, featured synth leads over pulsing synth pads, driving bassline, drums and rhythmic claps; dynamic female pop vocal with confident spoken intro and soaring chorus; heavy dance-pop beat, polished club mix; mid-tempo groove steadily accelerating into a high-energy drop"
+---
+[Intro: Atmospheric synth pads, soft atmospheric intro]
+[Spoken Word - Confident, slightly whispered over the beat]
+A gente só quer amar em paz. Andar na rua sem olhar pra trás... Mas a nossa liberdade nunca foi de graça.
+
+[Verse 1 - Driving bassline kicks in, mid-tempo]
+O brilho na nossa pele é a coragem de existir
+Ninguém tem o direito de dizer como sorrir
+A gente conquistou o mundo e o casamento no papel
+Mas a nuvem do retrocesso quer cobrir o nosso céu.
+Demorou tanto tempo pra gente poder respirar
+E agora tem engravatado querendo nos apagar.
+
+[Verse 2 - Tempo increases, more synths]
+O Senador da Mansão tá armando no congresso
+Quer mexer na constituição pra barrar o teu sucesso.
+Imagina o STF na mão de quem te odeia?
+É o Bozofilho preparando para passar a rasteira.
+Ele vai salvar o papai e tramar na surdina,
+Pra anular o teu sim e incentivar chacina.
+
+[Pre-Chorus - Build-up, drums getting faster, rising tension]
+A nossa liberdade não é jogo de azar!
+Não vou voltar pro armário, eu não vou recuar!
+Não é sobre partido, é sobre paz e segurança,
+De beijar quem você ama sem perder a esperança!
+Prepara o coração...
+
+[Beat Drop - Heavy Dance Pop Beat]
+
+[Chorus - Explosive Club Anthem, high energy]
+Bota a cara no sol, faz o L de amor!
+O 13 é a resposta contra o ódio e o pavor!
+Com Lula a nossa vida tem respeito e tem cor!
+Não deixa o Rachadinha apagar o teu valor!
+Faz o L com orgulho, deixa a voz ecoar
+A gente vota 13 pra poder se libertar!
+
+[Verse 3 - Funky bassline, rhythmic flow]
+Eles dizem defender a moral e o costume,
+Mas escondem grana suja, é só falsidade e ciúme.
+Querem censura na escola, proibir quem a gente é,
+Mas a nossa resistência se mantém firme de pé.
+Eles lucram com a mentira, surfam na nossa dor,
+Mas na urna a gente ensina o verdadeiro valor.
+
+[Bridge - Tempo slows down, just vocal and atmospheric synth]
+Eu olho pro futuro e sei que a gente não tá só.
+O amor é a maior força, desfazendo todo nó.
+Se eles querem o Supremo pra poder nos calar...
+A gente usa a democracia pra fazer o Lula brilhar.
+
+[Build-up - Drums rolling fast]
+Um, dois, três... Vai!
+
+[Chorus - Explosive Club Anthem, full energy]
+Bota a cara no sol, faz o L de amor!
+O 13 é a resposta contra o ódio e o pavor!
+Com Lula a nossa vida tem respeito e tem cor!
+Não deixa o Rachadinha apagar o teu valor!
+Faz o L com orgulho, deixa a voz ecoar
+A gente vota 13 pra poder se libertar!
+
+[Outro - Heavy synth fading out with rhythmic claps]
+Nunca mais um passo atrás.
+O amor venceu. Faz o L!
+Bora Lula 13!
+[End]
