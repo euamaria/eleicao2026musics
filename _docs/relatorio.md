@@ -11,6 +11,10 @@
    - Para as músicas da Playlist "Fantástica Fábrica de Rachadinha", a lista de links presente em `Links no suno.txt` foi mapeada e as músicas foram geradas em Markdown na coleção de músicas `_musicas/`, com `estilo` em branco. Os assets também foram normalizados.
 4. **Agrupamento da Playlist:**
    - Foi criado um arquivo correspondente a playlist `_playlists/fantastica-fabrica-de-rachadinha.md` que agrupa os identificadores normalizados das 5 músicas que compõem a playlist.
+5. **Correção da Playlist:**
+   - Verificou-se que a playlist "Fantástica Fábrica de Rachadinha" apresentava um erro na listagem (não mostrava a quantidade de músicas) e resultava em uma página em branco quando aberta.
+   - A causa do problema era que a propriedade no `front matter` do arquivo `_playlists/fantastica-fabrica-de-rachadinha.md` estava definida como `musicas` (com os identificadores puros das músicas, ex: `1-devolve-meu-salario`) e faltava a declaração do `layout: playlist`. O layout `playlists.html` esperava a propriedade `tracks` contendo o caminho relativo dos arquivos das músicas (ex: `_musicas/1-devolve-meu-salario.md`).
+   - A correção consistiu em adicionar o `layout: playlist`, alterar a chave `musicas` para `tracks` e atualizar os valores da lista para incluir o prefixo `_musicas/` e o sufixo `.md`, compatibilizando com as regras do Jekyll para exibição da playlist de maneira nativa e sem gambiarras.
 
 ## Próximos Passos
 - Verificação pelo usuário de todo conteúdo migrado.
